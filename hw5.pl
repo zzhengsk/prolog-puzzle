@@ -1,11 +1,3 @@
-% *****************************************************
-% *						part 1 						  *
-% ********************  fc_course  ********************
-%fc_course(C) :- course(C, _, 3); course(C, _, 4). 
-fc_course(C) :- course(C, _, Units), (Units=3; Units=4).
-
-% ********************  prereq_110  ********************
-prereq_110(C) :- course(C, Clist, _), member(ecs110,Clist).
 % ********************    puzzle	********************	
 	
 % all facts: state(farmer, wolf, goat, cabbage)
